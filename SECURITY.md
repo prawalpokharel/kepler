@@ -39,9 +39,11 @@ shouldn't have it, or can be used to escalate privileges, is in scope.
 
 ## Security Response Team
 
-The maintainers with the Repository Oversight role triage reports, as set out
-in [GOVERNANCE.md](GOVERNANCE.md#4-repository-oversight). The Project Lead is
-the escalation contact.
+While all [MAINTAINERS](MAINTAINERS.md#maintainers) are responsible for the
+project's security hardening, Maintainers with the [Technical Committee](GOVERNANCE.md#2-technical-committee)
+and/or [Repository Oversight](https://github.com/sustainable-computing-io/kepler/blob/main/GOVERNANCE.md#4-repository-oversight)
+roles specifically are responsible for triaging reports, as set out in [GOVERNANCE.md](GOVERNANCE.md#4-repository-oversight).
+The Project Lead is the escalation contact.
 
 ## What to Expect
 
