@@ -327,7 +327,8 @@ process's CPU energy under the existing termination settings, keyed by PID and
 start time so multiple terminated lifetimes can coexist before export. Capacity
 and energy thresholds apply to each lifetime. CPU and GPU energy carry forward
 only when both PID and start time match the previous snapshot. The process
-holding the PID still receives the current interval of GPU energy.
+holding the PID still receives the current interval of GPU energy, as does a
+process whose PID was not in the previous snapshot.
 If the collection that detects reuse fails, the next successful collection also
 checks the previous snapshot to retain the replaced lifetime.
 Running and terminated CPU energy and power metrics retain their state labels.

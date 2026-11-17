@@ -1038,6 +1038,10 @@ func TestProcessPowerWithGPU(t *testing.T) {
 		require.True(t, exists)
 		assert.Equal(t, 50.5, proc123.GPUPower)
 
+		// Process 123 is not in the previous snapshot, and still gets the GPU
+		// energy of the interval it is first seen in: 50.5W × 1s
+		assert.Equal(t, Energy(50.5*1.0*float64(Joule)), proc123.GPUEnergyTotal)
+
 		// Verify GPU stats were collected
 		assert.Len(t, newSnapshot.GPUStats, 1)
 		assert.Equal(t, 500*Joule, newSnapshot.GPUStats[0].EnergyTotal)
